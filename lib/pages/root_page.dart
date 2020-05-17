@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toko_roti/pages/login_signup_page.dart';
+import 'file:///D:/Project/toko_roti/lib/screens/auths/login_signup_scr.dart';
 import 'package:toko_roti/services/authentication.dart';
 import 'package:toko_roti/pages/home_page.dart';
 
