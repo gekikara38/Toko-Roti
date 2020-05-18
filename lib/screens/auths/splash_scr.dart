@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:toko_roti/resources/constants.dart';
 import 'package:toko_roti/resources/router.dart';
 
 class MySplashScreen extends StatefulWidget {
@@ -10,12 +11,12 @@ class MySplashScreen extends StatefulWidget {
 
 class _MySplashScreenState extends State<MySplashScreen> {
   startTime() async {
-    var _duration = new Duration(seconds: 3);
+    var _duration = new Duration(seconds: 1);
     return new Timer(_duration, navigationPage);
   }
 
   void navigationPage() {
-    Navigator.pushNamed(context, '/auth');
+    Navigator.pushNamed(context, '/login');
   }
 
   @override
@@ -27,6 +28,7 @@ class _MySplashScreenState extends State<MySplashScreen> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
+      backgroundColor: CPalette.backgroundColor,
       body: new Center(
         child: new Image.asset('assets/images/app_logo.png', scale: 2),
       ),

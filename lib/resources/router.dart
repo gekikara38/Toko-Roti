@@ -12,6 +12,8 @@ class Router {
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(builder: (_) => MySplashScreen());
+      case '/login':
+        return MaterialPageRoute(builder: (_) => LoginScreen());
       case '/auth':
         return MaterialPageRoute(builder: (_) => new RootPage(auth: new Auth()));
       default:

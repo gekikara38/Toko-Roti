@@ -22,13 +22,17 @@ class CPalette {
   static const secondaryColor = Color(0xff8bc34a);
 
   /// usually used for: card color, pop up color, secondary background color
-  static const tertiaryColor = Color(0xffddeedf);
+  static const backgroundColor = Color(0xfffafafa);
 
   /// usually used for: primary background color
-  static const backgroundColor = Color(0xfff2f9f1);
+  static const backgroundColor2 = Color(0xfff5f5f5);
 }
 
-class TStyle{
+class TStyle {
 //  usually used for title
-  static const title = TextStyle(fontSize: 16,fontWeight:FontWeight.bold );
+  static const title = TextStyle(
+      fontSize: 16, fontWeight: FontWeight.bold, fontFamily: "Futura");
+
+// usually used for general
+  static const basic = TextStyle(fontFamily: "Futura", fontSize: 16);
 }
