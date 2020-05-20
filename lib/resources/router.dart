@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:toko_roti/pages/root_page.dart';
+import 'package:toko_roti/screens/auths/login_scr.dart';
 //import 'package:toko_roti/home.dart';
 import 'package:toko_roti/screens/auths/splash_scr.dart';
 import 'package:toko_roti/services/authentication.dart';
-
-import '../screens/auths/login_scr.dart';
+import 'package:toko_roti/pages/login_signup_page.dart';
 
 /// making route for the app and callback when enter the wrong routes
 class Router {
@@ -14,7 +14,9 @@ class Router {
         return MaterialPageRoute(builder: (_) => MySplashScreen());
       case '/login':
         return MaterialPageRoute(builder: (_) => LoginScreen());
-      case '/auth':
+      case '/auth_signin':
+        return MaterialPageRoute(builder: (_) => new RootPage(auth: new Auth()));
+      case '/auth_signup':
         return MaterialPageRoute(builder: (_) => new RootPage(auth: new Auth()));
       default:
         return MaterialPageRoute(

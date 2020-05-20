@@ -18,7 +18,7 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
   String _password;
   String _errorMessage;
 
-    bool _isLoginForm;
+  bool _isLoginForm;
   bool _isLoading;
 
   // Check if form is valid before perform login or signup
@@ -142,7 +142,7 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
               showEmailInput(),
               showPasswordInput(),
               showPrimaryButton(),
-              showSecondaryButton(),
+//              showSecondaryButton(),
               showErrorMessage(),
             ],
           ),
@@ -223,7 +223,7 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
             shape: new RoundedRectangleBorder(
                 borderRadius: new BorderRadius.circular(30.0)),
             color: Colors.blue,
-            child: new Text(_isLoginForm ? 'Login' : 'Create account',
+            child: new Text('Login',
                 style: new TextStyle(fontSize: 20.0, color: Colors.white)),
             onPressed: validateAndSubmit,
           ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:toko_roti/services/authentication.dart';
 
+
 class LoginSignupPage extends StatefulWidget {
   LoginSignupPage({this.auth, this.loginCallback});
 
@@ -90,9 +91,6 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-        appBar: new AppBar(
-          title: new Text('Flutter login demo'),
-        ),
         body: Stack(
           children: <Widget>[
             _showForm(),

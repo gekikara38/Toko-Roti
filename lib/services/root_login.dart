@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toko_roti/pages/login_signup_page.dart';
+import 'package:toko_roti/services/login.dart';
 import 'package:toko_roti/services/authentication.dart';
 import 'package:toko_roti/pages/home_page.dart';
 
@@ -31,7 +31,7 @@ class _RootPageState extends State<RootPage> {
           _userId = user?.uid;
         }
         authStatus =
-            user?.uid == null ? AuthStatus.NOT_LOGGED_IN : AuthStatus.LOGGED_IN;
+        user?.uid == null ? AuthStatus.NOT_LOGGED_IN : AuthStatus.LOGGED_IN;
       });
     });
   }
