@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:toko_roti/resources/popularext.dart';
+import 'package:toko_roti/resources/moderext.dart';
 
-class Popular extends StatelessWidget {
+class Moder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Container(
@@ -27,7 +27,7 @@ class Popular extends StatelessWidget {
                   Expanded(
                     flex: 7,
                     child: Image.asset(
-                      populars[index].image,
+                      moderns[index].image,
                       fit: BoxFit.contain,
                       //width: 200.0,
                       //height: 200.0,
@@ -38,7 +38,7 @@ class Popular extends StatelessWidget {
                     child: Container(
                       padding: EdgeInsets.only(left: 16.0),
                       child: Text(
-                        populars[index].name,
+                        moderns[index].name,
                         style: TextStyle(
                           fontSize: 18.0,
                           fontWeight: FontWeight.bold,
@@ -51,7 +51,7 @@ class Popular extends StatelessWidget {
                     child: Container(
                       padding: EdgeInsets.only(left: 16.0),
                       child: Text(
-                        populars[index].price,
+                        moderns[index].price,
                         style: TextStyle(
                           fontSize: 14.0,
                           fontFamily: 'FuturaBold',

@@ -34,14 +34,14 @@ class _DefaultAppBarState extends State<DefaultAppBar> {
             ],
           ),
           backgroundColor: Colors.white,
-          leading: GestureDetector(
+          /*leading: GestureDetector(
             onTap: () {
 
             },
             child: Icon(
               Icons.menu
             ),
-          ),
+          ),*/
           actions: <Widget>[
             Padding(
               padding: EdgeInsets.only(right: 20.0),

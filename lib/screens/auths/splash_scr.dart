@@ -16,7 +16,7 @@ class _MySplashScreenState extends State<MySplashScreen> {
   }
 
   void navigationPage() {
-    Navigator.pushNamed(context, '/auth');
+    Navigator.pushNamed(context, '/home');
   }
 
   @override

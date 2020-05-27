@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toko_roti/home.dart';
 import 'package:toko_roti/pages/root_page.dart';
 import 'package:toko_roti/screens/auths/login_scr.dart';
 //import 'package:toko_roti/home.dart';
@@ -12,6 +13,8 @@ class Router {
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(builder: (_) => MySplashScreen());
+      case '/home':
+        return MaterialPageRoute(builder: (_) => Home());
       case '/login':
         return MaterialPageRoute(builder: (_) => LoginScreen());
       case '/auth':
