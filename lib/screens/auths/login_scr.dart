@@ -164,20 +164,23 @@ class _LoginScreenState extends State<LoginScreen> {
               children: <Widget>[
                 Image.asset(
                   "assets/images/app_logo.png",
-                  scale: MediaQuery.of(context).devicePixelRatio*2,
-                )
+                  scale: MediaQuery.of(context).size.aspectRatio * 7,
+                ),
+//                scale: MediaQuery.of(context).size.height*0.004,)
               ],
             ),
           ),
         ),
         bottom: PreferredSize(
-          preferredSize: Size.square(ScreenUtil().setHeight(500)),
+          preferredSize: Size.square(MediaQuery.of(context).size.height * 0.2),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               FlatButton(
-                padding: EdgeInsets.symmetric(vertical: ScreenUtil().setHeight(35),horizontal: ScreenUtil().setWidth(70)),
+                padding: EdgeInsets.symmetric(
+                    vertical: ScreenUtil().setHeight(35),
+                    horizontal: ScreenUtil().setWidth(70)),
                 color: _signInActive ? Colors.white : Colors.transparent,
                 onPressed: _changeToSignIn,
 //                borderSide: new BorderSide(
@@ -186,9 +189,11 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: new Text("LOGIN",
                     style: _signInActive ? TStyle.active : TStyle.disable),
               ),
-              SizedBox(width: SizeConfig.safeBlockHorizontal*12),
+              SizedBox(width: SizeConfig.safeBlockHorizontal * 12),
               FlatButton(
-                padding: EdgeInsets.symmetric(vertical: ScreenUtil().setHeight(35),horizontal: ScreenUtil().setWidth(55)),
+                padding: EdgeInsets.symmetric(
+                    vertical: ScreenUtil().setHeight(35),
+                    horizontal: ScreenUtil().setWidth(55)),
                 color: _signInActive ? Colors.transparent : Colors.white,
                 onPressed: _changeToSignUp,
                 child: new Text(
@@ -215,7 +220,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ],
             ),
             width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height*0.6,
+            height: MediaQuery.of(context).size.height * 0.6,
           ),
           TermsConditions(),
         ],
@@ -376,7 +381,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   onPressed: () {},
                   icon: new Image.asset(
                     "assets/icons/google.png",
-                    scale: MediaQuery.of(context).devicePixelRatio*5,
+                    scale: MediaQuery.of(context).devicePixelRatio * 5,
                   ),
                   label: Text(
                     "Google",
@@ -395,7 +400,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   onPressed: () {},
                   icon: new Image.asset(
                     "assets/icons/facebook.png",
-                    scale: MediaQuery.of(context).devicePixelRatio*5,
+                    scale: MediaQuery.of(context).devicePixelRatio * 5,
                   ),
                   label: Text(
                     "Facebook",
