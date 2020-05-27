@@ -3,7 +3,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:toko_roti/resources/defaultappbar.dart';
 import 'package:toko_roti/resources/widgets/popular.dart';
-import 'package:toko_roti/resources/widgets/responsive_safe_area.dart';
 
 class Home extends StatefulWidget {
   @override

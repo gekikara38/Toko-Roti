@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:toko_roti/pages/login_signup_page.dart';
+import 'package:toko_roti/screens/auths/login_scr.dart';
+//import 'package:toko_roti/screens/auths/login_signup_scr.dart';
 import 'package:toko_roti/services/authentication.dart';
 import 'package:toko_roti/pages/home_page.dart';
 
@@ -70,7 +71,7 @@ class _RootPageState extends State<RootPage> {
         return buildWaitingScreen();
         break;
       case AuthStatus.NOT_LOGGED_IN:
-        return new LoginSignupPage(
+        return new LoginScreen(
           auth: widget.auth,
           loginCallback: loginCallback,
         );

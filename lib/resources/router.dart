@@ -14,10 +14,8 @@ class Router {
         return MaterialPageRoute(builder: (_) => MySplashScreen());
       case '/login':
         return MaterialPageRoute(builder: (_) => LoginScreen());
-      case '/auth_signin':
-        return MaterialPageRoute(builder: (_) => new RootPage(auth: new Auth()));
-      case '/auth_signup':
-        return MaterialPageRoute(builder: (_) => new RootPage(auth: new Auth()));
+      case '/auth':
+        return MaterialPageRoute(builder: (_) => new RootPage(auth: new Auth(),));
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

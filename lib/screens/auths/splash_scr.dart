@@ -16,7 +16,7 @@ class _MySplashScreenState extends State<MySplashScreen> {
   }
 
   void navigationPage() {
-    Navigator.pushNamed(context, '/login');
+    Navigator.pushNamed(context, '/auth');
   }
 
   @override
@@ -30,7 +30,7 @@ class _MySplashScreenState extends State<MySplashScreen> {
     return new Scaffold(
       backgroundColor: CPalette.backgroundColor,
       body: new Center(
-        child: new Image.asset('assets/images/app_logo.png', scale: 2),
+        child: new Image.asset('assets/images/app_logo.png', scale: MediaQuery.of(context).devicePixelRatio*1.2),
       ),
     );
   }
